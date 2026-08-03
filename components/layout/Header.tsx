@@ -104,7 +104,7 @@ export function Header() {
             {/* Sign In */}
             <button
               type="button"
-              className="ml-1 hidden cursor-pointer rounded-full bg-[rgb(var(--ink-rgb))] px-5 py-2 text-sm font-medium text-[rgb(var(--paper-rgb))] transition-all duration-300 ease-premium hover:scale-[1.03] hover:bg-[rgb(var(--signature-rgb))] hover:text-[rgb(var(--ink-rgb))] md:inline-flex"
+              className="ml-1 hidden cursor-pointer rounded-full bg-[rgb(var(--signature-rgb))] px-5 py-2 text-sm font-medium text-white transition-all duration-300 ease-premium hover:scale-[1.03] hover:bg-[#fd1d1d] md:inline-flex"
             >
               Sign in
             </button>
