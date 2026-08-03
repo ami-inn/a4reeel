@@ -12,6 +12,7 @@ const Hero = () => {
           <p className="mx-auto mt-5 max-w-2xl text-sm font-medium leading-relaxed text-white/75 md:text-base lg:text-lg">
             Discover AI Prompts and Edits
           </p>
+          
         </div>
       </div>
     </BackgroundGradientAnimation>

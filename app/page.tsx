@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero'
 import { Header } from '@/components/layout/Header'
+import { PromptGrid } from '@/components/PromptGrid'
 import React from 'react'
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <>
     <Header/>
     <Hero/>
+    <PromptGrid/>
     </>
   )
 }
