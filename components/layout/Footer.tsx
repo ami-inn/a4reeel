@@ -21,7 +21,7 @@ export function Footer() {
               </span>
               <span className="text-[15px] font-semibold tracking-tight">A4Reel</span>
             </Link>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/80">
               Curated AI prompts for image generation, editing, and cinematic
               visual storytelling.
             </p>
@@ -58,7 +58,7 @@ export function Footer() {
                   <li key={link}>
                     <Link
                       href="#"
-                      className="text-sm text-muted transition-colors hover:text-ink"
+                      className="text-sm text-white/80 transition-colors hover:text-ink"
                     >
                       {link}
                     </Link>
@@ -70,7 +70,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col items-center justify-between gap-6 border-t border-line pt-8 sm:flex-row">
-          <p className="text-xs text-muted">
+          <p className="text-xs text-white/80">
             © {new Date().getFullYear()} A4Reel. All rights reserved.
           </p>
           {/* <div className="flex items-center gap-4">
@@ -79,7 +79,7 @@ export function Footer() {
                 key={i}
                 href="#"
                 aria-label="Social link"
-                className="flex h-8 w-8 items-center justify-center rounded-full border border-line text-muted transition-colors hover:border-signature hover:text-ink"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-line text-white/80 transition-colors hover:border-signature hover:text-ink"
               >
                 <Icon className="h-3.5 w-3.5" strokeWidth={1.75} />
               </a>

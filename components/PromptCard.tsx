@@ -48,15 +48,15 @@ export function PromptCard({ prompt, index = 0 }: PromptCardProps) {
           showTooltip={false}
         />
 
-        <span className="pointer-events-none absolute left-3 top-3 rounded-full border border-[rgb(var(--line-rgb))/0.75] bg-[rgb(var(--paper-rgb))/0.7] px-3 py-1 text-[11px] font-medium uppercase tracking-wide text-[rgb(var(--ink-rgb))] backdrop-blur-sm">
+        {/* <span className="pointer-events-none absolute left-3 top-3 rounded-full border border-[rgb(var(--line-rgb))/0.75] bg-[rgb(var(--paper-rgb))/0.7] px-3 py-1 text-[11px] font-medium uppercase tracking-wide text-[rgb(var(--ink-rgb))] backdrop-blur-sm">
           {prompt.category}
-        </span>
+        </span> */}
 
         <button
           type="button"
           onClick={handleCopy}
           aria-label="Copy prompt to clipboard"
-          className="absolute right-3 top-3 flex h-8 w-8 translate-y-1 items-center justify-center rounded-full border border-[rgb(var(--line-rgb))/0.75] bg-[rgb(var(--paper-rgb))/0.8] text-[rgb(var(--ink-rgb))] opacity-0 shadow-soft transition-all duration-300 ease-premium group-hover:translate-y-0 group-hover:opacity-100"
+          className="absolute cursor-prointer right-3 top-3 flex h-8 w-8 translate-y-1 items-center justify-center rounded-full border border-[rgb(var(--line-rgb))/0.75] bg-[rgb(var(--paper-rgb))/0.8] text-[rgb(var(--ink-rgb))] opacity-0 shadow-soft transition-all duration-300 ease-premium group-hover:translate-y-0 group-hover:opacity-100"
         >
           {copied ? (
             <Check className="h-3.5 w-3.5 text-signature" />
@@ -70,17 +70,17 @@ export function PromptCard({ prompt, index = 0 }: PromptCardProps) {
         <h3 className="text-[15px] font-semibold tracking-tight text-ink">
           {prompt.title}
         </h3>
-        <p className="line-clamp-2 text-sm leading-relaxed text-muted">
+        <p className="line-clamp-2 text-sm leading-relaxed text-white/80">
           {prompt.description}
         </p>
 
         <div className="mt-3 flex items-center justify-between border-t border-line pt-3">
-          <div className="flex items-center gap-4 font-mono text-xs text-muted">
+          <div className="flex items-center gap-4 font-mono text-xs text-white/80">
             <span className="flex items-center gap-1.5">
               <Eye className="h-3.5 w-3.5" strokeWidth={1.75} />
               {formatCount(prompt.views)}
             </span>
-            <span className="flex items-center gap-1.5">
+            <span className="flex items-center gap-1.5 cursor-pointer">
               <Heart className="h-3.5 w-3.5" strokeWidth={1.75} />
               {formatCount(prompt.likes)}
             </span>
@@ -89,7 +89,7 @@ export function PromptCard({ prompt, index = 0 }: PromptCardProps) {
           <button
             type="button"
             onClick={handleCopy}
-            className="rounded-full border border-[rgb(var(--line-rgb))] bg-[rgb(var(--mist-rgb))/0.35] px-3 py-1.5 text-xs font-medium text-[rgb(var(--ink-rgb))] transition-colors duration-300 hover:border-[rgb(var(--signature-rgb))] hover:bg-[rgb(var(--signature-rgb))/0.16]"
+            className="rounded-full cursor-pointer border border-[rgb(var(--line-rgb))] bg-[rgb(var(--mist-rgb))/0.35] px-3 py-1.5 text-xs font-medium text-[rgb(var(--ink-rgb))] transition-colors duration-300 hover:border-[rgb(var(--signature-rgb))] hover:bg-[rgb(var(--signature-rgb))/0.16]"
           >
             {copied ? "Copied" : "Copy"}
           </button>

@@ -461,3 +461,9 @@ body {
   opacity: 0;
   z-index: 3;
 }
+
+
+.shiny-text {
+  display: inline-block;
+}
+
